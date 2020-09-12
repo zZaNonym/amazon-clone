@@ -1,0 +1,58 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  &__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+  }
+  &__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    &_input {
+      height: 12px;
+      border: none;
+      width: 100%;
+      padding: 10px;
+    }
+    &_icon {
+      padding: 5px;
+      height: 22px !important;
+      background-color: #cd9042;
+      cursor: pointer;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    color: #fff;
+    &_lineTop {
+      font-size: 10px;
+    }
+    &_lineBottom {
+      font-size: 13px;
+      font-weight: 800;
+    }
+  }
+  &__optionBasket {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &_count {
+      margin: 0 10px;
+    }
+  }
+}
